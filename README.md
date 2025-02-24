@@ -9,7 +9,9 @@ The architecture of this project involves a seamless integration of AWS services
 
 ## Project Architecture
 
-![Project Architecture Diagram](src/arc_diag.png)
+![Project Architecture Diagram](SRC/arc_diag.png)
+
+
 
 ## Components
 
@@ -18,7 +20,8 @@ The architecture of this project involves a seamless integration of AWS services
 - Extracts song data from my personal Spotify playlist using the Spotify API.
 - Configured to run every 120 days.
 - Stores extracted raw data in an S3 bucket.
-![AWS Lambda: Data Extraction](src/Lambda%201.png)
+  
+![AWS Lambda: Data Extraction](SRC/Lambda%201.png)
 
 ### 2. AWS Lambda Function: Data Transformation
 
@@ -27,28 +30,29 @@ The architecture of this project involves a seamless integration of AWS services
   - Artists of each song.
   - Song data in my personal playlist.
   - Albums each song belongs to.
-![AWS Lambda: Data Transformation](src/Lambda%201.png)
+    
+![AWS Lambda: Data Transformation](SRC/Lambda%201.png)
 
 ### 3. AWS EventBridge Rule
 
 - Automatically triggers the data extraction Lambda function upon detecting changes in the S3 bucket.
 
-![AWS EventBridge Rule](src/event_bridge_rules_updated.png)
+![AWS EventBridge Rule](SRC/event_bridge_rules_updated.png)
 
 ### 4. S3 Bucket Structure
 
 - Stores raw and transformed data.
 
-![S3 Bucket Structure](src/S3.png)
+![S3 Bucket Structure](SRC/S3.png)
 
 ### 5. AWS S3 Role for SnowPipe
 
 - Configured to allow Snowflake to access the data in the S3 bucket.
 
-![AWS S3 Role for SnowPipe](src/aws%20s3%20role%20snowpipe.png)
+![AWS S3 Role for SnowPipe](SRC/aws%20s3%20role%20snowpipe.png)
 
 ## Snowflake Data Warehouse
-![Snowflake DB Structure](src/Snowflake%20Structure.png)
+![Snowflake DB Structure](SRC/Snowflake%20Structure.png)
 ### Table Schema
 
 #### Albums Table (TB_ALBUM)
@@ -94,7 +98,7 @@ CREATE OR REPLACE TABLE TB_SONG_ARTIST (
 
 ## Dashboard 
 Mades this dashboard on snowflake using Snowsight
-![Dashboard Snapshot](src/dash.png)
+![Dashboard Snapshot](SRC/dash.png)
 
 ## Conclusion
 
