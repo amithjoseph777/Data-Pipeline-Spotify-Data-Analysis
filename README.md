@@ -1,3 +1,4 @@
+
 # Building a Data Pipeline for Spotify Playlist Analysis Using AWS and Snowflake
 
 This project demonstrates the creation of a data pipeline to extract, transform, and analyze data from my personal Spotify playlist using AWS and Snowflake. The pipeline automates data extraction, transformation, and visualization processes.
@@ -98,3 +99,5 @@ Mades this dashboard on snowflake using Snowsight
 ## Conclusion
 
 This project showcases the integration of various AWS services and Snowflake to build a robust data pipeline. By automating the extraction, transformation, and loading processes, I can easily analyze and visualize my Spotify playlist data. This pipeline can be extended to include more complex transformations and analyses, providing deeper insights into music preferences and trends.
+
+
